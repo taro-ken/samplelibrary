@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cmx-N6-62V">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Active Label View Controller-->
+        <scene sceneID="ScY-7Z-TwW">
+            <objects>
+                <viewController id="cmx-N6-62V" customClass="ActiveLabelViewController" customModule="samplelibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7qb-H6-sfp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ReY-CX-ov2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B4y-bi-gbd">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="205"/>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9tt-1G-pXZ">
+                                        <rect key="frame" x="0.0" y="205" width="414" height="204"/>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xo0-Oi-Ua8">
+                                        <rect key="frame" x="0.0" y="409" width="414" height="205"/>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vaS-B1-4H4">
+                                        <rect key="frame" x="0.0" y="614" width="414" height="204"/>
+                                    </containerView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6N0-oE-AJh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ReY-CX-ov2" firstAttribute="bottom" secondItem="6N0-oE-AJh" secondAttribute="bottom" id="ckm-IJ-xqw"/>
+                            <constraint firstItem="ReY-CX-ov2" firstAttribute="leading" secondItem="6N0-oE-AJh" secondAttribute="leading" id="djo-iT-JH4"/>
+                            <constraint firstItem="ReY-CX-ov2" firstAttribute="trailing" secondItem="6N0-oE-AJh" secondAttribute="trailing" id="nDC-4N-6UK"/>
+                            <constraint firstItem="ReY-CX-ov2" firstAttribute="top" secondItem="6N0-oE-AJh" secondAttribute="top" id="uz5-QA-7r0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activeLabelContainerView1" destination="B4y-bi-gbd" id="Vt6-hf-UiP"/>
+                        <outlet property="activeLabelContainerView2" destination="9tt-1G-pXZ" id="2rl-iG-ajA"/>
+                        <outlet property="activeLabelContainerView3" destination="Xo0-Oi-Ua8" id="jqV-YP-ABT"/>
+                        <outlet property="activeLabelContainerView4" destination="vaS-B1-4H4" id="eml-Kh-5Kx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="viZ-SQ-DgU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84.057971014492765" y="187.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
