@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sDX-1T-Scf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lottie View Controller-->
+        <scene sceneID="l0B-bQ-rV6">
+            <objects>
+                <viewController id="sDX-1T-Scf" customClass="LottieViewController" customModule="samplelibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aUu-7v-yio">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="m8P-nm-mD0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="648"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9T-FD-3KL">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S9k-ub-bVz">
+                                        <rect key="frame" x="0.0" y="216" width="414" height="216"/>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTU-2b-djy">
+                                        <rect key="frame" x="0.0" y="432" width="414" height="216"/>
+                                    </containerView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrc-Ui-rrI">
+                                <rect key="frame" x="138" y="746" width="138" height="58"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ze5-Vl-Cq0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ze5-Vl-Cq0" firstAttribute="bottom" secondItem="m8P-nm-mD0" secondAttribute="bottom" constant="170" id="3Bj-nn-rdl"/>
+                            <constraint firstItem="m8P-nm-mD0" firstAttribute="leading" secondItem="Ze5-Vl-Cq0" secondAttribute="leading" id="TG3-fv-GIK"/>
+                            <constraint firstItem="m8P-nm-mD0" firstAttribute="trailing" secondItem="Ze5-Vl-Cq0" secondAttribute="trailing" id="VJY-mT-ifx"/>
+                            <constraint firstItem="Ze5-Vl-Cq0" firstAttribute="bottom" secondItem="hrc-Ui-rrI" secondAttribute="bottom" constant="58" id="X8S-7o-YxO"/>
+                            <constraint firstItem="hrc-Ui-rrI" firstAttribute="leading" secondItem="Ze5-Vl-Cq0" secondAttribute="leading" constant="138" id="oUs-3m-Mx3"/>
+                            <constraint firstItem="m8P-nm-mD0" firstAttribute="top" secondItem="Ze5-Vl-Cq0" secondAttribute="top" id="t4b-DZ-Yfh"/>
+                            <constraint firstItem="Ze5-Vl-Cq0" firstAttribute="trailing" secondItem="hrc-Ui-rrI" secondAttribute="trailing" constant="138" id="wjg-vF-LCU"/>
+                            <constraint firstItem="hrc-Ui-rrI" firstAttribute="top" secondItem="m8P-nm-mD0" secondAttribute="bottom" constant="54" id="xag-6U-cgX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationButton" destination="hrc-Ui-rrI" id="zVg-bX-yXE"/>
+                        <outlet property="animationContainerView1" destination="c9T-FD-3KL" id="ZEo-nc-rzE"/>
+                        <outlet property="animationContainerView2" destination="S9k-ub-bVz" id="NQA-ow-IqP"/>
+                        <outlet property="animationContainerView3" destination="yTU-2b-djy" id="5Pa-rR-eiK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ti-Hj-LO5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186.95652173913044" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
